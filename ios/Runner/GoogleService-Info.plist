@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1080215422648-v76n66u322jtlb35epm1ctnukvr4lsdt.apps.googleusercontent.com</string>
+	<string>1080215422648-713puh38190ncm8ce6b01ipilnpshpbi.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1080215422648-v76n66u322jtlb35epm1ctnukvr4lsdt</string>
+	<string>com.googleusercontent.apps.1080215422648-713puh38190ncm8ce6b01ipilnpshpbi</string>
 	<key>ANDROID_CLIENT_ID</key>
 	<string>1080215422648-a0dp0d0i2ltnp646v2j0s2ir3bem3gkl.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
@@ -15,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.firebaseDynamicLinksSample</string>
+	<string>com.example.firebaseDynamicLinksSample3</string>
 	<key>PROJECT_ID</key>
 	<string>dynamic-links-sample-ca6a7</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1080215422648:ios:5207e185db1e176885d64d</string>
+	<string>1:1080215422648:ios:98e066c8b78f4b4685d64d</string>
 </dict>
 </plist>

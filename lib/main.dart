@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'firebase_options.dart';
@@ -10,7 +11,6 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
   runApp(const MyApp());
 }
 
@@ -37,12 +37,32 @@ class MyHomePage extends StatelessWidget {
     final dynamicLinkParams = DynamicLinkParameters(
       link: Uri.parse("https://www.example.com/"),
       uriPrefix: "https://dynamiclinkssample2.page.link",
+      androidParameters: const AndroidParameters(
+        packageName: "com.example.firebase_dynamic_links_sample",
+        minimumVersion: 1,
+      ),
+      iosParameters: const IOSParameters(
+        bundleId: "com.example.firebaseDynamicLinksSample3",
+        appStoreId: "123456789",
+      ),
+      googleAnalyticsParameters: const GoogleAnalyticsParameters(
+        source: "twitter",
+        medium: "social",
+        campaign: "example-promo",
+      ),
+      socialMetaTagParameters: SocialMetaTagParameters(
+        title: "Example of a Dynamic Link",
+        imageUrl: Uri.parse("https://example.com/image.png"),
+      ),
     );
-    return await FirebaseDynamicLinks.instance.buildLink(dynamicLinkParams);
+    return (await FirebaseDynamicLinks.instance
+            .buildShortLink(dynamicLinkParams))
+        .shortUrl;
   }
 
   void _openDynamicLink() async {
-    launchUrl(await _buildDynamicLink(), mode: LaunchMode.externalApplication);
+    launchUrl((await _buildDynamicLink()),
+        mode: LaunchMode.externalApplication);
   }
 
   @override

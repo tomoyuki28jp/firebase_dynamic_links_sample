@@ -66,9 +66,11 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1080215422648',
     projectId: 'dynamic-links-sample-ca6a7',
     storageBucket: 'dynamic-links-sample-ca6a7.appspot.com',
-    androidClientId: '1080215422648-a0dp0d0i2ltnp646v2j0s2ir3bem3gkl.apps.googleusercontent.com',
-    iosClientId: '1080215422648-v76n66u322jtlb35epm1ctnukvr4lsdt.apps.googleusercontent.com',
-    iosBundleId: 'com.example.firebaseDynamicLinksSample',
+    androidClientId:
+        '1080215422648-a0dp0d0i2ltnp646v2j0s2ir3bem3gkl.apps.googleusercontent.com',
+    iosClientId:
+        '1080215422648-v76n66u322jtlb35epm1ctnukvr4lsdt.apps.googleusercontent.com',
+    iosBundleId: 'com.example.firebaseDynamicLinksSample3',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -77,8 +79,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1080215422648',
     projectId: 'dynamic-links-sample-ca6a7',
     storageBucket: 'dynamic-links-sample-ca6a7.appspot.com',
-    androidClientId: '1080215422648-a0dp0d0i2ltnp646v2j0s2ir3bem3gkl.apps.googleusercontent.com',
-    iosClientId: '1080215422648-v76n66u322jtlb35epm1ctnukvr4lsdt.apps.googleusercontent.com',
-    iosBundleId: 'com.example.firebaseDynamicLinksSample',
+    androidClientId:
+        '1080215422648-a0dp0d0i2ltnp646v2j0s2ir3bem3gkl.apps.googleusercontent.com',
+    iosClientId:
+        '1080215422648-v76n66u322jtlb35epm1ctnukvr4lsdt.apps.googleusercontent.com',
+    iosBundleId: 'com.example.firebaseDynamicLinksSample3',
   );
 }
